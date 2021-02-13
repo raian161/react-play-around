@@ -1,8 +1,14 @@
 import React from "react";
 import styles from "./Header.module.scss";
 
-const Header = () => {
-  return <header className={styles.header}>i m header</header>;
+const Header = (props) => {
+  return (
+    <header className={styles.header}>
+      {" "}
+      <p>cart {props.num}</p>
+      <p>stock {props.stock}</p>
+    </header>
+  );
 };
 
 export default Header;
