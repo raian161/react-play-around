@@ -1,17 +1,17 @@
 import React from "react";
-import styles from "./Header.module.scss";
+import styles from "./Cart.module.scss";
 
-const Header = (props) => {
+const Cart = (props) => {
   return (
-    <header className={styles.header}>
+    <cart className={styles.cart}>
       {""}
       <p>cart {props.num}</p>
       <p>price {props.price}</p>
       <p>stock {props.stock}</p>
       <button onClick={props.handleDcrement}>-</button>
       <button onClick={props.handleIncrement}>+</button>
-    </header>
+    </cart>
   );
 };
 
-export default Header;
+export default Cart;
